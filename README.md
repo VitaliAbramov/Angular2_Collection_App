@@ -29,3 +29,26 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+# Insructions
+### Angular 2 Marketplace application step by step
+
+Build from scratch angular 2 application with two sections: collection and market.
+The user will be able to add to his collection (cart) products from the market.
+Start to setup development environment using the command-line interface:
+- Install NodeJS and NPM using homebrew: 
+`brew install node`
+- Install angular CLI:
+`sudo npm install -g angular-cli@latest`
+ if you  have **permission** issues with _**Unable to save binary**_ the solution is to run:
+`sudo chown -R root /usr/local/lib/node_modules/`
+and try to install again.
+
+- create new application name *collection-app*:
+`ng new collection-app`
+
+- To serve the app run the command in the app directory:
+`ng serve`
+The app will run at **http://localhost:4200**:
+**If the browser return "app works" then the setup is finish.**
