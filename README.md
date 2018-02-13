@@ -52,3 +52,14 @@ and try to install again.
 `ng serve`
 The app will run at **http://localhost:4200**:
 **If the browser return "app works" then the setup is finish.**
+
+- Install bootstrap using NPM, this will add bootstrap as a dependency :
+`npm install --save bootstrap@4.0.0-beta.2`
+
+Modify the angular-cli.json file:
+```
+"styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.css",
+        "styles.css"
+      ]
+```
