@@ -63,7 +63,45 @@ Modify the angular-cli.json file:
       ]
 ```
 
-### First component Market
-to create new component `ng g c market`
+##### First component Market
+create new component `ng g c market -is --spec false`
 g - generate, c - component.
-app.module.ts updates and imports automatically  to the module market component.
+app.module.ts updates and import to the module market component.
+- added to *market.component.html*
+```
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge">Photo</span>
+        <button class="btn btn-success">Add to Collection</button>&nbsp;
+        Anything
+      </li>
+    </ul>
+  </div>
+</div>
+```
+
+##### Second component Collection
+create new component `ng g c collection -is --spec false`
+- added to *collection.component.html*
+```
+<div class="row">
+  <div class="col-xs-12">
+    <ul class="list-group">
+      <li class="list-group-item">
+        <span class="badge">Photo</span>
+        <button class="btn btn-danger">Remove from Collection</button>&nbsp;
+        Anything
+      </li>
+    </ul>
+  </div>
+</div>
+```
+- added to app.component.html
+```
+<div class="container">
+  <app-market></app-market>
+  <app-collection></app-collection>
+</div>
+```
