@@ -32,28 +32,27 @@ To get more help on the `angular-cli` use `ng help` or go check out the [Angular
 
 
 # Insructions
-### Angular 2 Marketplace application step by step
+## Angular 2 Marketplace application step by step
 
 Build from scratch angular 2 application with two sections: collection and market.
 The user will be able to add to his collection (cart) products from the market.
 Start to setup development environment using the command-line interface:
-- Install NodeJS and NPM using homebrew: 
-`brew install node`
-- Install angular CLI:
+
+- Install NodeJS and NPM using homebrew `brew install node`
+- Install angular CLI
 `sudo npm install -g angular-cli@latest`
- if you  have **permission** issues with _**Unable to save binary**_ the solution is to run:
+ if you  have **permission** issues with _**Unable to save binary**_ the solution is to run
 `sudo chown -R root /usr/local/lib/node_modules/`
 and try to install again.
 
-- create new application name *collection-app*:
-`ng new collection-app`
+- create new application name *collection-app* `ng new collection-app`
 
-- To serve the app run the command in the app directory:
+- To serve the app run the command in the app directory   
 `ng serve`
-The app will run at **http://localhost:4200**:
+the app will run at **http://localhost:4200**
 **If the browser return "app works" then the setup is finish.**
 
-- Install bootstrap using NPM, this will add bootstrap as a dependency :
+- Install bootstrap using NPM, this will add bootstrap as a dependency 
 `npm install --save bootstrap@4.0.0-beta.2`
 
 Modify the angular-cli.json file:
@@ -63,3 +62,8 @@ Modify the angular-cli.json file:
         "styles.css"
       ]
 ```
+
+### First component Market
+to create new component `ng g c market`
+g - generate, c - component.
+app.module.ts updates and imports automatically  to the module market component.
