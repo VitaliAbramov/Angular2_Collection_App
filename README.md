@@ -31,8 +31,7 @@ Run `ng github-pages:deploy` to deploy to GitHub Pages.
 To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 
-# Insructions
-## Angular 2 Marketplace application step by step
+# Instructions - Angular 2 Marketplace application
 
 Build from scratch angular 2 application with two sections: collection and market.
 The user will be able to add to his collection (cart) products from the market.
@@ -68,36 +67,24 @@ create new component `ng g c market -is --spec false`
 g - generate, c - component.
 app.module.ts updates and import to the module market component.
 - added to *market.component.html*
-```
-<div class="row">
-  <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <span class="badge">Photo</span>
-        <button class="btn btn-success">Add to Collection</button>&nbsp;
-        Anything
-      </li>
-    </ul>
-  </div>
-</div>
-```
+
 
 ##### Second component Collection
 create new component `ng g c collection -is --spec false`
 - added to *collection.component.html*
-```
-<div class="row">
-  <div class="col-xs-12">
-    <ul class="list-group">
-      <li class="list-group-item">
-        <span class="badge">Photo</span>
-        <button class="btn btn-danger">Remove from Collection</button>&nbsp;
-        Anything
-      </li>
-    </ul>
-  </div>
-</div>
-```
 
-when entering the initial state of the app it includes market and collection and looks like:
+
+#Demo
+
+The initial state of the collection is empty:
+
 ![alt text](https://github.com/VitaliAbramov/Angular2_Collection_App/blob/master/images/collection.png)
+
+The intitial state of the market:
+
+![alt text](https://github.com/VitaliAbramov/Angular2_Collection_App/blob/master/images/market.png)
+
+When clicking on products from the market, 'Photo' and 'Garbage' the collection updated:
+
+![alt text](https://github.com/VitaliAbramov/Angular2_Collection_App/blob/master/images/collection1.png)
+
