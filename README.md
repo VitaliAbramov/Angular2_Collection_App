@@ -53,7 +53,7 @@ the app will run at **http://localhost:4200**
 **If the browser return "app works" then the setup is finish.**
 
 - Install bootstrap using NPM, this will add bootstrap as a dependency 
-`npm install --save bootstrap@4.0.0-beta.2`
+`npm install --save bootstrap@3.3.7`
 
 Modify the angular-cli.json file:
 ```
@@ -96,12 +96,5 @@ create new component `ng g c collection -is --spec false`
       </li>
     </ul>
   </div>
-</div>
-```
-- added to app.component.html
-```
-<div class="container">
-  <app-market></app-market>
-  <app-collection></app-collection>
 </div>
 ```
