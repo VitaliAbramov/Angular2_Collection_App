@@ -100,4 +100,4 @@ create new component `ng g c collection -is --spec false`
 ```
 
 when entering the initial state of the app it includes market and collection and looks like:
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://github.com/VitaliAbramov/Angular2_Collection_App/blob/master/images/collection.png)
